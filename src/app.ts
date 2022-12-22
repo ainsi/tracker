@@ -24,7 +24,7 @@ const sockets: Socket[] = [];
                 ;
         })
         .on('error', e => {
-            console.error(e.message);
+            process.stderr.write(`${e.message}\n`);
             process.exit(1);
         })
         ;
