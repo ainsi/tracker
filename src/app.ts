@@ -1,7 +1,7 @@
 import { createServer, Socket } from 'net';
 
 const host = process.env.HOST || 'localhost';
-const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
+const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 6881;
 const sockets: Socket[] = [];
 
 (async () => {
